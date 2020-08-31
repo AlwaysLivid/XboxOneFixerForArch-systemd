@@ -10,7 +10,7 @@ This tool automates the Bluetooth configuration process described in the [Arch L
 - Run the following command:
 
 ```sh
-curl https://raw.githubusercontent.com/AlwaysLivid/XboxOneFixerForArch-systemd/master/xboxfixer.service > /etc/systemd/system/minecraft@.service
+curl https://raw.githubusercontent.com/AlwaysLivid/XboxOneFixerForArch-systemd/master/xboxfixer.service > /etc/systemd/system/xboxfixer.service
 ```
 
 Make sure to prepend `sudo` if you're not logged in as a user with root access.
