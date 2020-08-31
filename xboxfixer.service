@@ -5,10 +5,11 @@ Description=Xbox One Controller Fixer for Arch Linux
 PrivateUsers=true
 User=root
 ProtectHome=true
+Type=oneshot
 ExecStart=/bin/sh -c 'echo 1 > /sys/module/bluetooth/parameters/disable_ertm'
 ExecStart=/bin/sh -c 'echo Flipped disable_ertm value to 1'
 ExecStop=/bin/sh -c 'echo 0 > /sys/module/bluetooth/parameters/disable_ertm'
-ExecStart=/bin/sh -c 'echo Flipped disable_ertm value to 0'
+ExecStop=/bin/sh -c 'echo Flipped disable_ertm value to 0'
 
 Restart=on-failure
 RestartSec=60s
